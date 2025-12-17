@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhaval Mungara | IT Manager & Infrastructure Leader</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Dhaval Mungara – IT Manager & Infrastructure Leader with 14+ years of experience in Global NOC, Network Security, SD-WAN, Automation, and Enterprise IT Operations.">
+  <meta name="keywords" content="IT Manager, Infrastructure Head, Network Security, SOC, SD-WAN, Cisco, Meraki, Fortinet, Automation">
+  <meta name="author" content="Dhaval Mungara">
+
+  <!-- OpenGraph / LinkedIn -->
+  <meta property="og:title" content="Dhaval Mungara | IT Manager & Infrastructure Leader" />
+  <meta property="og:description" content="Global IT leader driving 99.98% uptime, 850+ sites, secure networks, automation, and enterprise-scale infrastructure." />
+  <meta property="og:image" content="https://dhavalmungara.github.io/assets/profile.jpg" />
+  <meta property="og:url" content="https://dhavalmungara.github.io" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Smooth Scroll -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans transition-colors duration-300">
+
+<script>
+  // Apply saved theme on load
+  const applyTheme = () => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  };
+  applyTheme();
+
+  // Toggle dark/light mode and persist
+  function toggleTheme() {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }
+
+  // Init animations & icons (FIXED – no stray brackets)
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({ once: true, duration: 800 });
+    lucide.createIcons();
+  });
+</script>
+
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-gray-900 shadow-lg z-50" data-aos="fade-down">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Dhaval Mungara</h1>
+    <div class="space-x-6 hidden md:block">
+      <button onclick="toggleTheme()" class="ml-6 px-3 py-1 border rounded-lg hover:bg-gray-700">🌙</button>
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#skills" class="hover:text-cyan-400">Skills</a>
+      <a href="#experience" class="hover:text-cyan-400">Experience</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#education" class="hover:text-cyan-400">Education</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center text-center px-6">
+  <div class="flex flex-col items-center" data-aos="zoom-in">
+    <img src="assets/profile.jpg" alt="Dhaval Mungara" class="w-40 h-40 rounded-full border-4 border-cyan-500 shadow-xl mb-6" />
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4">IT Manager & Network Leader</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto">
+      Driving enterprise IT infrastructure, network security, automation, and digital transformation across global operations.
+    </p>
+    <div class="mt-6 space-x-4">
+      <a href="#contact" class="px-6 py-3 bg-cyan-600 rounded-xl hover:bg-cyan-500">Contact Me</a>
+      <a href="assets/Dhaval_Mungara_Resume.pdf" class="px-6 py-3 border border-cyan-600 rounded-xl hover:bg-cyan-600">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-bold mb-6">About Me</h3>
+  <p class="text-gray-400 leading-relaxed">
+    Results-driven IT Manager with 16+ years of experience managing large-scale IT infrastructure, NOC operations, cybersecurity,
+    automation, and enterprise applications. Proven leader in global IT service delivery, network modernization, and digital transformation.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="bg-gray-900 py-20" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-10">Technical Skills</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-semibold text-cyan-400 mb-2 inline-flex items-center gap-2"><i data-lucide="shield"></i> Networking & Security</h4>
+        <p class="text-gray-400">Cisco, Meraki, Fortinet, Sophos, Aruba, SD-WAN, Firewalls, VPN, Zero Trust</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-cyan-400 mb-2 inline-flex items-center gap-2"><i data-lucide="cloud"></i> Systems & Cloud</h4>
+        <p class="text-gray-400">Windows/Linux, Virtualization, Azure DevOps, AWS Fundamentals, DR & BCP</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-cyan-400 mb-2 inline-flex items-center gap-2"><i data-lucide="settings"></i> Automation & Tools</h4>
+        <p class="text-gray-400">PowerShell, Python, RPA, Power Automate, SolarWinds, ThousandEyes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+  <h3 class="text-3xl font-bold mb-10">Experience Timeline</h3>
+  <div class="border-l-2 border-cyan-600 ml-4">
+    <div class="mb-10 ml-6">
+      <span class="text-cyan-400 font-semibold">2023 – Present</span>
+      <h4 class="text-xl font-semibold">IT Manager – SITP Ltd</h4>
+      <p class="text-gray-400">Leading Global NOC operations achieving <strong>99.98% uptime</strong>, managing <strong>850+ sites</strong> across US & India, and ensuring SLA compliance above <strong>99%</strong>.</p>
+    </div>
+    <div class="mb-10 ml-6">
+      <span class="text-cyan-400 font-semibold">2015 – 2023</span>
+      <h4 class="text-xl font-semibold">Senior Manager – Reliance Industries</h4>
+      <p class="text-gray-400">Enterprise IT leadership supporting <strong>42+ business applications</strong>, <strong>10+ data centers</strong>, RPA-driven helpdesk automation reducing tickets by <strong>35%</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="bg-gray-900 py-20" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-10">🎓 Certifications</h3>
+    <div class="grid md:grid-cols-3 gap-6 text-gray-400">
+      <div class="border rounded-xl p-6 flex items-center gap-4"><i data-lucide="award"></i><span>AWS Fundamentals</span></div>
+      <div class="border rounded-xl p-6 flex items-center gap-4"><i data-lucide="network"></i><span>CCNP</span></div>
+      <div class="border rounded-xl p-6 flex items-center gap-4"><i data-lucide="briefcase"></i><span>Project Management</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="bg-gray-900 py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-10">🚀 Key Projects</h3>
+    <ul class="space-y-4 text-gray-400">
+      <li>• 850+ Office SD-WAN & Network Automation – Express Service Inc (USA)</li>
+      <li>• Data Center & Meraki MX250 Security Deployment – Merino Industries</li>
+      <li>• Fortinet Firewall & Cisco Catalyst Deployment – BAPS Mahotsav</li>
+      <li>• RPA-enabled IT Helpdesk Automation – Reliance Industries</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="max-w-6xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-bold mb-6">Education</h3>
+  <ul class="text-gray-400 space-y-2">
+    <li><strong>MBA (IT)</strong> – Jaipur National University</li>
+    <li><strong>B.Tech (ECE)</strong> – Singhania University</li>
+    <li><strong>Diploma (ECE)</strong> – AV Parekh Technical Institute</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-gray-900 py-20 text-center" data-aos="fade-up">
+  <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+  <form action="https://formspree.io/f/yourFormID" method="POST" class="max-w-xl mx-auto space-y-4">
+    <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-800">
+    <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-800">
+    <textarea name="message" placeholder="Message" required class="w-full p-3 rounded bg-gray-800"></textarea>
+    <button type="submit" class="px-6 py-3 bg-cyan-600 rounded-xl hover:bg-cyan-500">Send Message</button>
+  </form>
+  <p class="mt-6 text-gray-400">Vadodara, Gujarat | dvmungara@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 text-center text-gray-500">
+  © 2025 Dhaval Mungara. Built with HTML, Tailwind CSS & GitHub Pages.<br/>
+  Open to Global IT Leadership, SOC & Infrastructure Head roles.
+</footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+</body>
+</html>
